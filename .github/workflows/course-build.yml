@@ -2,7 +2,7 @@ name: Course Build
 run-name: ${{ github.actor }} kicked off a build
 on: [push]
 jobs:
-  Create_Cluster_Run_Test:
+  DocumentZipAndUpload:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -16,5 +16,5 @@ jobs:
           role-session-name: Hotdog
       - name: Checkout
         uses: actions/checkout@v4.2.2
-      - name: testing
-        run: echo "hello" && ls $GITHUB_WORKSPACE
+      - name: CourseBuild
+        uses: russau/course-action:main
