@@ -1,0 +1,20 @@
+name: Course Build
+run-name: ${{ github.actor }} kicked off a build
+on: [push]
+jobs:
+  Create_Cluster_Run_Test:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4.1.0
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-west-2
+          role-session-name: Hotdog
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: testing
+        run: echo "hello" && ls $GITHUB_WORKSPACE
