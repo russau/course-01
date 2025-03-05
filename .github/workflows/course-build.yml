@@ -17,4 +17,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
       - name: CourseBuild
-        uses: russau/course-action:main
+        uses: russau/course-action@main
