@@ -1,6 +1,8 @@
 course_code: COURSE01
 languages:
-  - code: ko-ko
-    version: 3.2.0
-  - code: en-us
+  - code: ko-KR
+    version: 3.1.1
+    name: 기본 사항 소개
+  - code: en-US
     version: 3.2.9
+    name: Introduction to the Basics
