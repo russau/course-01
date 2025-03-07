@@ -6,3 +6,6 @@ languages:
   - code: en-US
     version: 4.0.0
     name: Introduction to the Basics
+  - code: fr-CA
+    version: 4.0.0
+    name: Introduction aux bases
